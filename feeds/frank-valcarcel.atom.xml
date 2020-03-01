@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>IndustrialBackplane - Frank Valcarcel</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/" rel="alternate"></link><link href="https://waynedupreez1.github.io/IndustrialBackplane/feeds/frank-valcarcel.atom.xml" rel="self"></link><id>https://waynedupreez1.github.io/IndustrialBackplane/</id><updated>2014-05-01T10:35:00+12:00</updated><entry><title>The Second Article</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/blog/the-second-article" rel="alternate"></link><published>2014-05-01T10:35:00+12:00</published><updated>2014-05-01T10:35:00+12:00</updated><author><name>Frank Valcarcel</name></author><id>tag:waynedupreez1.github.io,2014-05-01:/IndustrialBackplane/blog/the-second-article</id><content type="html">&lt;p&gt;This should probably have something else...&lt;/p&gt;
+&lt;p&gt;Let's test some syntax highlighting:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@hosts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;production&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;publish&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pelican -s publishconf.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="blog"></category></entry></feed>

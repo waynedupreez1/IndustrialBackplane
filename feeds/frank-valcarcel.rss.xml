@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>IndustrialBackplane - Frank Valcarcel</title><link>https://waynedupreez1.github.io/IndustrialBackplane/</link><description></description><lastBuildDate>Thu, 01 May 2014 10:35:00 +1200</lastBuildDate><item><title>The Second Article</title><link>https://waynedupreez1.github.io/IndustrialBackplane/blog/the-second-article</link><description>&lt;p&gt;This should probably have something else...&lt;/p&gt;
+&lt;p&gt;Let's test some syntax highlighting:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@hosts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;production&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;publish&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pelican -s publishconf.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Frank Valcarcel</dc:creator><pubDate>Thu, 01 May 2014 10:35:00 +1200</pubDate><guid isPermaLink="false">tag:waynedupreez1.github.io,2014-05-01:/IndustrialBackplane/blog/the-second-article</guid><category>blog</category></item></channel></rss>

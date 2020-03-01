@@ -1,0 +1,201 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="../../theme/js/jquery.min.js"></script>
+    <script src="../../theme/js/jquery.dropotron.min.js"></script>
+    <script src="../../theme/js/skel.min.js"></script>
+    <script src="../../theme/js/skel-layers.min.js"></script>
+    <script src="../../theme/js/init.js"></script>
+    <link rel="stylesheet" href="../../theme/css/pygment.css" />
+    <noscript>
+        <link rel="stylesheet" href="../../theme/css/skel.css" />
+        <link rel="stylesheet" href="../../theme/css/style.css" />
+        <link rel="stylesheet" href="../../theme/css/style-noscript.css" />
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+
+    <title>Seriously WTForm | IndustrialBackplane </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+</head>
+
+<body class=" loading">
+
+
+
+    <!-- Header -->
+    <header id="header" >
+        <h1 class="logo">
+            <a href="../..">IndustrialBackplane, design Twenty <span> by html5 up</span></a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                <li class="submenu">
+                    <a href="../../blog">Blog</a>
+                    <ul>
+                            <li >
+                                <a href="../../category/blog/">blog</a>
+                            </li>
+                            <li class="active">
+                                <a href="../../category/programming/">Programming</a>
+                            </li>
+                    </ul>
+                </li>
+                <li><a href="#" class="button special">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main -->
+<article id="main">
+
+  <header class="special container">
+    <span class="icon fa-pied-piper-alt"></span>
+    <h2>Seriously WTForm</h2>
+    <!-- add page sub title here -->
+    <p>Posted on 2014-06-28T10:42:00Z by Wayne du Preez</p>
+    <p>pied-piper-alt</p>
+  </header>
+
+  <!-- One -->
+    <section class="wrapper style4 container">
+
+      <!-- Content -->
+        <div class="content">
+          <section>
+            <!-- <a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a> -->
+            <h3>Posted in <a href="../../category/programming/">Programming</a></h3>
+            <p class="tags">
+</p>
+            <p><p>I'm about neck deep into a large Flask application. It's an MVP so no over the top
+Angular frontend or anything. Means I'm using a lot of WTForm to get user input...</p>
+<p>Means I'm saying <strong><em>"WTF?!"</em></strong>  <strong>a lot!</strong><br>
+I've used WTForms before. In django projects as well. I've never really felt so bitter
+toward them. The name just used to be funny... now I'm seriously wondering "what the fuck?!".
+It's not hard to get data to Flask views. It's actually pretty freaking simple. So the only
+reason to use an extension like WTForms is because it would simplify this even further.</p>
+<p>Except it doesn't. <strong>Not at first</strong>.</p>
+<p>A little work has to go in to get the most from the library but that little work does go
+a long way. I'll show you a few ways you can get WTForms to really speed up your form
+generation and digestion.</p>
+<p>Let's look at a simple form class definition:</p>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">Form</span><span class="p">):</span>
+    <span class="n">firstname</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;First Name&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">Required</span><span class="p">(),</span><span class="n">Length</span><span class="p">(</span><span class="nb">max</span><span class="o">=</span><span class="mi">64</span><span class="p">)])</span>
+    <span class="n">middlename</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Middle Name&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">Optional</span><span class="p">(),</span><span class="n">Length</span><span class="p">(</span><span class="nb">max</span><span class="o">=</span><span class="mi">64</span><span class="p">)])</span>
+    <span class="n">lastname</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Last Name&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">Required</span><span class="p">(),</span><span class="n">Length</span><span class="p">(</span><span class="nb">max</span><span class="o">=</span><span class="mi">64</span><span class="p">)])</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="n">EmailField</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Email&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">Email</span><span class="p">(),</span> <span class="n">Optional</span><span class="p">()])</span>
+    <span class="n">dob</span> <span class="o">=</span> <span class="n">DateField</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Date of Birth&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">Optional</span><span class="p">()],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1">/%Y&#39;</span><span class="p">)</span>
+    <span class="n">phone</span> <span class="o">=</span> <span class="n">IntegerField</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Phone No.&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">Optional</span><span class="p">()],</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">gender</span> <span class="o">=</span> <span class="n">SelectField</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Male&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Female&#39;</span><span class="p">)])</span>
+</pre></div>
+
+
+<p><br>
+That corresponds to a model <code>Person</code>:</p>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+
+  <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;persons&#39;</span>
+
+  <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+  <span class="n">firstname</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">64</span><span class="p">))</span>
+  <span class="n">middlename</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">64</span><span class="p">))</span>
+  <span class="n">lastname</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">64</span><span class="p">))</span>
+  <span class="n">email</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">64</span><span class="p">))</span>
+  <span class="n">phone</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">)</span>
+  <span class="n">dob</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">DateTime</span><span class="p">)</span>
+  <span class="n">created_time</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">DateTime</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">get_current_time</span><span class="p">)</span>
+  <span class="n">gender</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">)</span>
+</pre></div></p>
+          </section>
+        </div>
+
+    </section>
+
+    <!-- Two -->
+    <section class="wrapper style1 container special">
+        <div class="row">
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-pied-piper-alt"></span>
+              <header>
+                <a href="../../blog/seriously-wtform" rel='bookmark'><h3>Seriously WTForm</h3></a>
+              </header>
+              <p>I'm about neck deep into a large Flask application. It's an MVP so no over the top Angular frontend or anything. Means I'm using a lot of WTForm to get user input... Means I'm saying <st</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../../blog/seriously-wtform" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-automobile"></span>
+              <header>
+                <a href="../../blog/my-first-article" rel='bookmark'><h3>My First Article</h3></a>
+              </header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim lorem consequat, malesuada dolor quis, gravida est. Cum sociis natoque penatibus et magnis dis parturient montes, nascet</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../../blog/my-first-article" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-building"></span>
+              <header>
+                <a href="../../blog/the-second-article" rel='bookmark'><h3>The Second Article</h3></a>
+              </header>
+              <p>This should probably have something else... Let's test some syntax highlighting: @hosts(<span</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../../blog/the-second-article" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+        </div>
+    </section>
+  </article>
+
+
+
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li>
+          <a href="http://twitter.com/fmdfrank" class="icon circle fa fa-twitter"><span class="label">twitter</span></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/pub/frank-valcarcel/3a/142/a92" class="icon circle fa fa-linkedin"><span class="label">linkedin</span></a>
+        </li>
+        <li>
+          <a href="http://github.com/frankv" class="icon circle fa fa-github"><span class="label">github</span></a>
+        </li>
+        <li>
+          <a href="http://bitbucket/frankv" class="icon circle fa fa-bitbucket"><span class="label">bitbucket</span></a>
+        </li>
+    </ul>
+
+    <span class="copyright">&copy; Untitled. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+
+</footer>
+</body>
+</html>
