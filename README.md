@@ -1,7 +1,7 @@
 # Industrial Backplane Website
 
 This is the source code for the:
-[IndustrialBackplane]
+[IndustrialBackplane](https://waynedupreez1.github.io/IndustrialBackplane/)
 
 which is based on pythons pelican static site generator.  
 
