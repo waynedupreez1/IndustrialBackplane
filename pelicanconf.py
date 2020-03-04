@@ -6,7 +6,7 @@ sys.path.append('.')
 
 AUTHOR = u'Wayne du Preez'
 SITENAME = u'IndustrialBackplane'
-SITEURL = 'https://waynedupreez1.github.io/IndustrialBackplane/'
+SITEURL = 'https://waynedupreez1.github.io/IndustrialBackplane'
 
 TIMEZONE = 'Pacific/Auckland'
 
@@ -27,10 +27,8 @@ TRANSLATION_FEED_ATOM = None
 #           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('twitter', 'http://twitter.com/fmdfrank'),
-          ('linkedin', 'http://www.linkedin.com/pub/frank-valcarcel/3a/142/a92'),
-          ('github', 'http://github.com/frankv'),
-          ('bitbucket', 'http://bitbucket/frankv'),)
+SOCIAL = (('linkedin', 'http://www.linkedin.com/pub/frank-valcarcel/3a/142/a92'),
+          ('github', 'http://github.com/frankv'),)
 
 
 DEFAULT_PAGINATION = 3
@@ -51,7 +49,7 @@ ARTICLE_SAVE_AS = "blog/{slug}/index.html"
 ARCHIVES_URL = "blog"
 ARCHIVES_SAVE_AS = "blog/index.html"
 
-PAGE_DIR = 'pages'
+PAGE_PATHS = 'pages'
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
 

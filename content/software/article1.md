@@ -1,5 +1,7 @@
 Title: My First Article
 Date: 2014-05-01 10:35
+Category: Software
+Author: Wayne du Preez
 icon: automobile
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim lorem consequat, malesuada dolor quis, gravida est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vitae pulvinar nisl. Vestibulum blandit risus enim, in pharetra felis rutrum sit amet.

@@ -1,6 +1,7 @@
 Title: Seriously WTForm
 Date: 2014-06-28 10:42
-Category: Programming
+Category: Hardware
+Author: Wayne du Preez
 icon: pied-piper-alt
 
 I'm about neck deep into a large Flask application. It's an MVP so no over the top

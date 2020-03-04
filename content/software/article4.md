@@ -1,8 +1,8 @@
-Title: The Second Article
-Date: 2014-05-01 10:35
-Author: Frank Valcarcel
-icon: building
-featured: True
+Title: Quattro
+Date: 2014-02-01 10:35
+Category: Software
+Author: Wayne du Preez
+icon: bomb
 
 This should probably have something else...
 
@@ -14,3 +14,5 @@ def publish():
     local('pelican -s publishconf.py')
     )
 ```
+
+Why didn't the damn icon show up.
