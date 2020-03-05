@@ -27,12 +27,12 @@ TRANSLATION_FEED_ATOM = None
 #           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('linkedin', 'http://www.linkedin.com/pub/frank-valcarcel/3a/142/a92'),
-          ('github', 'http://github.com/frankv'),)
+SOCIAL = (('linkedin', 'https://nz.linkedin.com/in/waynedupreez'),
+          ('github', 'http://github.com/waynedupreez1'),)
 
 
-DEFAULT_PAGINATION = 3
-POST_LIMIT = 3
+DEFAULT_PAGINATION = 4
+POST_LIMIT = 4
 
 RELATIVE_URLS = True
 

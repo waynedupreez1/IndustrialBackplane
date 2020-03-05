@@ -52,8 +52,8 @@
                     <li><a href="{{ link }}">{{ title }}</a></li>
                 {% endfor %}
                 <li class="submenu">
-                    <a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Blog</a>
-                    <ul>
+                    <!--a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Blog</a-->
+                    <!--ul-->
                         {% for cat, null in categories %}
                             {% if cat != 'blog' %}
                             <li {% if cat == category %}class="active"{% endif %}>
@@ -61,9 +61,9 @@
                             </li>
                             {% endif %}
                         {% endfor %}
-                    </ul>
+                    <!--/ul-->
                 </li>
-                <li><a href="#" class="button special">Sign Up</a></li>
+                <!--li><a href="#" class="button special">Sign Up</a></li-->
             </ul>
         </nav>
     </header>
