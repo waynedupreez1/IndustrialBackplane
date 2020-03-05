@@ -10,11 +10,10 @@
         <div class="inner">
 
           <header>
-            <h2>TWENTY</h2>
+            <h2>An Industrial Backplane</h2>
           </header>
-          <p>This is <strong>Twenty</strong>, a free<br />
-          responsive template<br />
-          by <a href="http://html5up.net">HTML5 UP</a>.</p>
+          <p>Designed for use in Single Board Computers<br />
+          and microcontrollers.</p>
           <footer>
             <ul class="buttons vertical">
               <li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
@@ -42,7 +41,7 @@
     </noscript>
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+    <!--link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" -->
     <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
 
@@ -58,69 +57,54 @@
     <!-- Header -->
     <header id="header" >
         <h1 class="logo">
-            <a href="..">IndustrialBackplane, design Twenty <span> by html5 up</span></a>
+            <a href="..">IndustrialBackplane</a>
         </h1>
         <nav id="nav">
             <ul>
                 <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
                 <li class="submenu">
-                    <a href="../blog">Blog</a>
-                    <ul>
+                    <!--a href="../blog">Blog</a-->
+                    <!--ul-->
                             <li >
-                                <a href="../category/blog/">blog</a>
+                                <a href="../category/hardware/">Hardware</a>
                             </li>
                             <li >
-                                <a href="../category/programming/">Programming</a>
+                                <a href="../category/software/">Software</a>
                             </li>
-                    </ul>
+                    <!--/ul-->
                 </li>
-                <li><a href="#" class="button special">Sign Up</a></li>
+                <!--li><a href="#" class="button special">Sign Up</a></li-->
             </ul>
         </nav>
     </header>
 
 <!-- Main -->
 <article id="main">
-
-  <header class="special container">
-    <span class="icon fa-bar-chart-o"></span>
-    <h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP<br />
-    I decided to give it a really creative name.</h2>
-    <p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,<br />
-    it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
-    and, like all my stuff,<br />
-    released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
-  </header>
-
-  <!-- One -->
-  <section class="wrapper style2 container special-alt">
-    <div class="row half">
-      <div class="8u">
-
+ <!-- One -->
+  <section class="wrapper style2 container special">
         <header>
-          <h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+          <h2>Issues with shields and hats</h2>
+          <p>
+            1. Messy wiring interconnects when having multiple hats and shields stacked.<br />
+            2. Never enough 24V compliant Inputs/Outputs.<br />
+            3. Not having a wide input voltage power supply cards for powering boards.<br />
+            4. Unable to use the same hats and shields with other sbc's and microcontrollers available.<br />
+            <br />
+          </p>
         </header>
-        <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
-        <footer>
-          <ul class="buttons">
-            <li><a href="#" class="button">Find Out More</a></li>
-          </ul>
-        </footer>
 
-      </div>
-      <div class="4u skel-cell-important">
-
-        <ul class="feature-icons">
-          <li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
-          <li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
-          <li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
-          <li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
-          <li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
-          <li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
-        </ul>
-
-      </div>
-    </div>
+        <header>         
+          <h2>Some Ideas around a workable solution</h2>
+          <p>
+            1. Must be modular.<br />
+            2. Must be expandable.<br />
+            3. Must be useable with any microcontroller or single board computer.<br />
+            <br />
+            Perhaps some sort of backplane type solution as follows
+            <br />
+            <a href="#" class="image"><img src="../theme/images/pcb_sketch.jpg" alt="" /></a><br />
+          </p>    
+        </header>
   </section>
 
   <!-- Two -->
@@ -132,12 +116,12 @@
         <section>
           <span class="icon feature fa-pied-piper-alt"></span>
           <header>
-            <a href="../blog/seriously-wtform" rel='bookmark'><h3>Seriously WTForm</h3></a>
+            <a href="../blog/hw-test1" rel='bookmark'><h3>HW Test1</h3></a>
           </header>
-          <p>I'm about neck deep into a large Flask application. It's an MVP so no over the top Angular frontend or anything. Means I'm using a lot of WTForm to get user input... Means I'm saying <st</p>
+          <p>I'm about neck deep into a large Flask application. It's an MVP so no over the top Angular frontend or anything. Means I'm using a lot of WTForm to get user input...</p>
           <footer>
               <ul class="buttons">
-                  <li><a href="../blog/seriously-wtform" class="button small">Read More</a></li>
+                  <li><a href="../blog/hw-test1" class="button small">Read More</a></li>
               </ul>
           </footer>
         </section>
@@ -148,12 +132,12 @@
         <section>
           <span class="icon feature fa-automobile"></span>
           <header>
-            <a href="../blog/my-first-article" rel='bookmark'><h3>My First Article</h3></a>
+            <a href="../blog/sw-test1" rel='bookmark'><h3>SW Test1</h3></a>
           </header>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim lorem consequat, malesuada dolor quis, gravida est. Cum sociis natoque penatibus et magnis dis parturient montes, nascet</p>
           <footer>
               <ul class="buttons">
-                  <li><a href="../blog/my-first-article" class="button small">Read More</a></li>
+                  <li><a href="../blog/sw-test1" class="button small">Read More</a></li>
               </ul>
           </footer>
         </section>
@@ -162,14 +146,14 @@
       <div class="4u">
 
         <section>
-          <span class="icon feature fa-empire"></span>
+          <span class="icon feature fa-building"></span>
           <header>
-            <a href="../blog/three" rel='bookmark'><h3>Three</h3></a>
+            <a href="../blog/sw-test2" rel='bookmark'><h3>SW Test2</h3></a>
           </header>
-          <p>This should probably have something else... then what I did before. Is this okay? Foo bar baz qux. Dolor sit amet. Blah Blah Blah</p>
+          <p>This should probably have something else... Feature yeah bpyyyiiii Let's test some syntax highlighting: @hosts</p>
           <footer>
               <ul class="buttons">
-                  <li><a href="../blog/three" class="button small">Read More</a></li>
+                  <li><a href="../blog/sw-test2" class="button small">Read More</a></li>
               </ul>
           </footer>
         </section>
@@ -191,14 +175,13 @@
 
     <div class="4u pagination-middle">
         <section>
-            <header>Page 1 / 2</header>
+            <header>Page 1 / 1</header>
         </section>
     </div>
 
     <div class="4u pagination-right">
         <section>
             <header>
-                <a href="../author/wayne-du-preez2.html">Older posts&nbsp;&rarr;</a>
             </header>
         </section>
     </div>
@@ -210,99 +193,17 @@
 
 </article>
 
-<!-- Three -->
-<section class="wrapper style3 container special">
 
-  <header class="major">
-    <h2>Next look at this <strong>cool stuff</strong></h2>
-  </header>
-
-  <div class="row">
-    <div class="6u">
-
-      <section>
-        <a href="#" class="image feature"><img src="../theme/images/pic01.jpg" alt="" /></a>
-        <header>
-          <h3>A Really Fast Train</h3>
-        </header>
-        <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-      </section>
-
-    </div>
-    <div class="6u">
-
-      <section>
-        <a href="#" class="image feature"><img src="../theme/images/pic02.jpg" alt="" /></a>
-        <header>
-          <h3>An Airport Terminal</h3>
-        </header>
-        <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-      </section>
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="6u">
-
-      <section>
-        <a href="#" class="image feature"><img src="../theme/images/pic03.jpg" alt="" /></a>
-        <header>
-          <h3>Hyperspace Travel</h3>
-        </header>
-        <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-      </section>
-
-    </div>
-    <div class="6u">
-
-      <section>
-        <a href="#" class="image feature"><img src="../theme/images/pic04.jpg" alt="" /></a>
-        <header>
-          <h3>And Another Train</h3>
-        </header>
-        <p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
-      </section>
-
-    </div>
-  </div>
-
-  <footer class="major">
-    <ul class="buttons">
-      <li><a href="#" class="button">See More</a></li>
-    </ul>
-  </footer>
-
-</section><!-- CTA -->
-<section id="cta">
-
-    <header>
-        <h2>Ready to do <strong>something</strong>?</h2>
-        <p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
-    </header>
-    <footer>
-        <ul class="buttons">
-            <li><a href="#" class="button special">Take My Money</a></li>
-            <li><a href="#" class="button">LOL Wut</a></li>
-        </ul>
-    </footer>
-
-</section>
 
 <!-- Footer -->
 <footer id="footer">
 
     <ul class="icons">
         <li>
-          <a href="http://twitter.com/fmdfrank" class="icon circle fa fa-twitter"><span class="label">twitter</span></a>
+          <a href="https://nz.linkedin.com/in/waynedupreez" class="icon circle fa fa-linkedin"><span class="label">linkedin</span></a>
         </li>
         <li>
-          <a href="http://www.linkedin.com/pub/frank-valcarcel/3a/142/a92" class="icon circle fa fa-linkedin"><span class="label">linkedin</span></a>
-        </li>
-        <li>
-          <a href="http://github.com/frankv" class="icon circle fa fa-github"><span class="label">github</span></a>
-        </li>
-        <li>
-          <a href="http://bitbucket/frankv" class="icon circle fa fa-bitbucket"><span class="label">bitbucket</span></a>
+          <a href="http://github.com/waynedupreez1" class="icon circle fa fa-github"><span class="label">github</span></a>
         </li>
     </ul>
 
