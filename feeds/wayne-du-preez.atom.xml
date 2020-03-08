@@ -66,5 +66,5 @@ needs to be interfaced with the backplane.&lt;/p&gt;
 &lt;/ol&gt;
 &lt;p&gt;By convention the CPU will be plugged into slot 1 and as explained above the backplane has no restriction that
 forces this other than physical space.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="alt text" src="/IndustrialBackplane/theme/images/backplanev00.jpeg" title="CPU"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" src="/IndustrialBackplane/theme/images/cpu_stm32v00.jpeg" title="CPU"&gt;&lt;/p&gt;
 &lt;h3&gt;&lt;strong&gt;And Thats it until the next one.&lt;/strong&gt;&lt;/h3&gt;</content><category term="Hardware"></category></entry></feed>
