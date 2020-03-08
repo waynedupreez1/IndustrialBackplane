@@ -24,10 +24,8 @@ this is just by convention and allowed space the backplane board have none of th
 built in.
 
 ![alt text][backplane]
-[backplane]: /IndustrialBackplane/theme/images/backplanev00.jpeg "BackPlanev0.0"
-<!---
-[backplane]: /themes/static/images/backplanev00.jpeg "BackPlane"
--->
+[backplane]: /IndustrialBackplane/theme/images/backplanev00.jpeg "BackPlane"
+
 # CPU PCB (RPI and STM32)
 
 This is a board specifically designed for Raspberry Pi and STM32 based "Blue Pill" to interface with
@@ -43,9 +41,6 @@ By convention the CPU will be plugged into slot 1 and as explained above the bac
 forces this other than physical space.
 
 ![alt text][cpu]
-[cpu]: /IndustrialBackplane/theme/images/backplanev00.jpeg "BackPlanev0.0"
-<!---
-[cpu]: /themes/static/images/CPU_STM32v00.jpeg "CPU_STM32"
--->
+[cpu]: /IndustrialBackplane/theme/images/backplanev00.jpeg "CPU"
 
 ### __And Thats it until the next one.__
