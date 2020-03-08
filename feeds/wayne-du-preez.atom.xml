@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>IndustrialBackplane - Wayne du Preez</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/" rel="alternate"></link><link href="https://waynedupreez1.github.io/IndustrialBackplane/feeds/wayne-du-preez.atom.xml" rel="self"></link><id>https://waynedupreez1.github.io/IndustrialBackplane/</id><updated>2020-05-04T14:25:00+12:00</updated><entry><title>HW Test1</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/blog/hw-test1" rel="alternate"></link><published>2020-05-04T14:25:00+12:00</published><updated>2020-05-04T14:25:00+12:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-05-04:/IndustrialBackplane/blog/hw-test1</id><content type="html">&lt;p&gt;I'm about neck deep into a large Flask application. It's an MVP so no over the top
-Angular frontend or anything. Means I'm using a lot of WTForm to get user input...&lt;/p&gt;</content><category term="Hardware"></category></entry><entry><title>SW Test1</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/blog/sw-test1" rel="alternate"></link><published>2020-03-01T12:00:00+13:00</published><updated>2020-03-01T12:00:00+13:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-03-01:/IndustrialBackplane/blog/sw-test1</id><summary type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim lorem consequat, malesuada dolor quis, gravida est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vitae pulvinar nisl. Vestibulum blandit risus enim, in pharetra felis rutrum sit amet.&lt;/p&gt;
-&lt;p&gt;Let's test some syntax highlighting:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@hosts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;production …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim lorem consequat, malesuada dolor quis, gravida est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vitae pulvinar nisl. Vestibulum blandit risus enim, in pharetra felis rutrum sit amet.&lt;/p&gt;
-&lt;p&gt;Let's test some syntax highlighting:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@hosts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;production&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;publish&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pelican -s publishconf.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;project&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rsync_project&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
-        &lt;span class="n"&gt;remote_dir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;dest_path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="n"&gt;exclude&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.DS_Store&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="n"&gt;local_dir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;DEPLOY_PATH&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rstrip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-        &lt;span class="n"&gt;delete&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;
-    &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Software"></category></entry><entry><title>SW Test2</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/blog/sw-test2" rel="alternate"></link><published>2020-03-01T11:35:00+13:00</published><updated>2020-03-01T11:35:00+13:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-03-01:/IndustrialBackplane/blog/sw-test2</id><content type="html">&lt;p&gt;This should probably have something else...&lt;/p&gt;
-&lt;p&gt;Feature yeah bpyyyiiii&lt;/p&gt;
-&lt;p&gt;Let's test some syntax highlighting:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nd"&gt;@hosts&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;production&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;publish&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="n"&gt;local&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;pelican -s publishconf.py&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="Software"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>IndustrialBackplane - Wayne du Preez</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/" rel="alternate"></link><link href="https://waynedupreez1.github.io/IndustrialBackplane/feeds/wayne-du-preez.atom.xml" rel="self"></link><id>https://waynedupreez1.github.io/IndustrialBackplane/</id><updated>2020-03-08T11:38:00+13:00</updated><entry><title>34C04 EEPROM Driver</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/blog/34c04-eeprom-driver" rel="alternate"></link><published>2020-03-08T11:38:00+13:00</published><updated>2020-03-08T11:38:00+13:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-03-08:/IndustrialBackplane/blog/34c04-eeprom-driver</id><summary type="html">&lt;h1&gt;Description&lt;/h1&gt;
+&lt;p&gt;So after geting some PCB's made I decided to try my hand at writing drivers for the 34C04 EEPROM
+I2C chips that I use to identify each PCB plugged into the backplane board.&lt;/p&gt;
+&lt;p&gt;I decided to write this in rust as my C language foo is not so great …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Description&lt;/h1&gt;
+&lt;p&gt;So after geting some PCB's made I decided to try my hand at writing drivers for the 34C04 EEPROM
+I2C chips that I use to identify each PCB plugged into the backplane board.&lt;/p&gt;
+&lt;p&gt;I decided to write this in rust as my C language foo is not so great, also rust is cool 
+and I want to try it out for embedded work as I already use it for pc code development.&lt;/p&gt;
+&lt;p&gt;My setup is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;IDE = VScode.&lt;/li&gt;
+&lt;li&gt;OS = Ubuntu - I run ubuntu at home and virtualize Windows where needed.&lt;/li&gt;
+&lt;li&gt;Target = STM32 - Blue Pill&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Issues&lt;/h1&gt;
+&lt;p&gt;The first issue was getting it setup nicely with GDB for debugging, fortunatly the web is full of people doing it.
+The second issues was to set it up in such a way that my unit test code is compiled and ran on my workstation and the
+the application code is compiled and ran on the target, I managed to figure it out.&lt;/p&gt;
+&lt;h1&gt;Some example code:&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;eeprom34c04&lt;/span&gt;::&lt;span class="n"&gt;SlaveAddr&lt;/span&gt;::&lt;span class="n"&gt;A2A1A0&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;mut&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;eeprom&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;eeprom34c04&lt;/span&gt;::&lt;span class="n"&gt;Eeprom34c04&lt;/span&gt;::&lt;span class="n"&gt;new_34c04&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i2c_setup&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;address&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;memory_address&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0x0F&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;0xF0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;eeprom&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;write_byte&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;memory_address&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;delay_ms&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="k"&gt;u16&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="kd"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;read_data&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;eeprom&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_byte&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;memory_address&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="n"&gt;unwrap&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;&lt;a href="https://github.com/waynedupreez1/eeprom34c04-rs"&gt;Link to Github 34C04 repo&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;strong&gt;And Thats it until the next one.&lt;/strong&gt;&lt;/h3&gt;</content><category term="Software"></category></entry><entry><title>PCB Design</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/blog/pcb-design" rel="alternate"></link><published>2020-03-08T11:38:00+13:00</published><updated>2020-03-08T11:38:00+13:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-03-08:/IndustrialBackplane/blog/pcb-design</id><summary type="html">&lt;h1&gt;Description&lt;/h1&gt;
+&lt;p&gt;I have managed to get some PCB's designed based on my requirements. 
+Here is some 3D models of the first few boards I am getting made.&lt;/p&gt;
+&lt;h1&gt;Backplane PCB&lt;/h1&gt;
+&lt;p&gt;This board is essentially the main component all other boards will plug into.&lt;/p&gt;
+&lt;h3&gt;Some features I tried to nail on this …&lt;/h3&gt;</summary><content type="html">&lt;h1&gt;Description&lt;/h1&gt;
+&lt;p&gt;I have managed to get some PCB's designed based on my requirements. 
+Here is some 3D models of the first few boards I am getting made.&lt;/p&gt;
+&lt;h1&gt;Backplane PCB&lt;/h1&gt;
+&lt;p&gt;This board is essentially the main component all other boards will plug into.&lt;/p&gt;
+&lt;h3&gt;Some features I tried to nail on this one:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Allowed for up to 4 boards to be plugged in.&lt;/li&gt;
+&lt;li&gt;Each slot is addressable.&lt;/li&gt;
+&lt;li&gt;Provide connectors for 24V, 3V3 and 5V to be connected directly into the backplane (This could be replaced by a plug in board).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By convention the CPU will be plugged into slot 1 and the PSU will be plugged into slot 4 though
+this is just by convention and allowed space the backplane board have none of these restrictions
+built in.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" src="/IndustrialBackplane/theme/images/backplanev00.jpeg" title="BackPlane"&gt;&lt;/p&gt;
+&lt;h1&gt;CPU PCB (RPI and STM32)&lt;/h1&gt;
+&lt;p&gt;This is a board specifically designed for Raspberry Pi and STM32 based "Blue Pill" to interface with
+the backplane. I however imagine there will be a CPU board designed for each SBC/Microcontroller that
+needs to be interfaced with the backplane.&lt;/p&gt;
+&lt;p&gt;Some features I tried to nail on this one:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Allow the controller to read what it is. This is done via an EEPROM chip.&lt;/li&gt;
+&lt;li&gt;Expose all the low level peripheral(SPI, Serial, PWM etc) to the rest of the backplane.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By convention the CPU will be plugged into slot 1 and as explained above the backplane has no restriction that
+forces this other than physical space.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" src="/IndustrialBackplane/theme/images/backplanev00.jpeg" title="CPU"&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;strong&gt;And Thats it until the next one.&lt;/strong&gt;&lt;/h3&gt;</content><category term="Hardware"></category></entry></feed>
