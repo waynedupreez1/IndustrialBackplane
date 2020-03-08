@@ -41,6 +41,6 @@ By convention the CPU will be plugged into slot 1 and as explained above the bac
 forces this other than physical space.
 
 ![alt text][cpu]
-[cpu]: /IndustrialBackplane/theme/images/backplanev00.jpeg "CPU"
+[cpu]: /IndustrialBackplane/theme/images/cpu_stm32v00.jpeg "CPU"
 
 ### __And Thats it until the next one.__
