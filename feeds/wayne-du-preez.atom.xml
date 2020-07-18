@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>IndustrialBackplane - Wayne du Preez</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/" rel="alternate"></link><link href="https://waynedupreez1.github.io/IndustrialBackplane/feeds/wayne-du-preez.atom.xml" rel="self"></link><id>https://waynedupreez1.github.io/IndustrialBackplane/</id><updated>2020-03-08T11:38:00+13:00</updated><entry><title>34C04 EEPROM Driver</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/blog/34c04-eeprom-driver" rel="alternate"></link><published>2020-03-08T11:38:00+13:00</published><updated>2020-03-08T11:38:00+13:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-03-08:/IndustrialBackplane/blog/34c04-eeprom-driver</id><summary type="html">&lt;h1&gt;Description&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PCBDevelopment - Wayne du Preez</title><link href="https://waynedupreez1.github.io/PCBDevelopment/" rel="alternate"></link><link href="https://waynedupreez1.github.io/PCBDevelopment/feeds/wayne-du-preez.atom.xml" rel="self"></link><id>https://waynedupreez1.github.io/PCBDevelopment/</id><updated>2020-03-08T11:38:00+13:00</updated><entry><title>34C04 EEPROM Driver</title><link href="https://waynedupreez1.github.io/PCBDevelopment/blog/34c04-eeprom-driver" rel="alternate"></link><published>2020-03-08T11:38:00+13:00</published><updated>2020-03-08T11:38:00+13:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-03-08:/PCBDevelopment/blog/34c04-eeprom-driver</id><summary type="html">&lt;h1&gt;Description&lt;/h1&gt;
 &lt;p&gt;So after geting some PCB's made I decided to try my hand at writing drivers for the 34C04 EEPROM
 I2C chips that I use to identify each PCB plugged into the backplane board.&lt;/p&gt;
 &lt;p&gt;I decided to write this in rust as my C language foo is not so great …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Description&lt;/h1&gt;
@@ -35,7 +35,7 @@ the application code is compiled and ran on the target, I managed to figure it o
 
 
 &lt;h2&gt;&lt;a href="https://github.com/waynedupreez1/eeprom34c04-rs"&gt;Link to Github 34C04 repo&lt;/a&gt;&lt;/h2&gt;
-&lt;h3&gt;&lt;strong&gt;And Thats it until the next one.&lt;/strong&gt;&lt;/h3&gt;</content><category term="Software"></category></entry><entry><title>PCB Design</title><link href="https://waynedupreez1.github.io/IndustrialBackplane/blog/pcb-design" rel="alternate"></link><published>2020-03-08T11:38:00+13:00</published><updated>2020-03-08T11:38:00+13:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-03-08:/IndustrialBackplane/blog/pcb-design</id><summary type="html">&lt;h1&gt;Description&lt;/h1&gt;
+&lt;h3&gt;&lt;strong&gt;And Thats it until the next one.&lt;/strong&gt;&lt;/h3&gt;</content></entry><entry><title>PCB Design</title><link href="https://waynedupreez1.github.io/PCBDevelopment/blog/pcb-design" rel="alternate"></link><published>2020-03-08T11:38:00+13:00</published><updated>2020-03-08T11:38:00+13:00</updated><author><name>Wayne du Preez</name></author><id>tag:waynedupreez1.github.io,2020-03-08:/PCBDevelopment/blog/pcb-design</id><summary type="html">&lt;h1&gt;Description&lt;/h1&gt;
 &lt;p&gt;I have managed to get some PCB's designed based on my requirements. 
 Here is some 3D models of the first few boards I am getting made.&lt;/p&gt;
 &lt;h1&gt;Backplane PCB&lt;/h1&gt;
@@ -67,4 +67,4 @@ needs to be interfaced with the backplane.&lt;/p&gt;
 &lt;p&gt;By convention the CPU will be plugged into slot 1 and as explained above the backplane has no restriction that
 forces this other than physical space.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="alt text" src="/IndustrialBackplane/theme/images/cpu_stm32v00.jpeg" title="CPU"&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;strong&gt;And Thats it until the next one.&lt;/strong&gt;&lt;/h3&gt;</content><category term="Hardware"></category></entry></feed>
+&lt;h3&gt;&lt;strong&gt;And Thats it until the next one.&lt;/strong&gt;&lt;/h3&gt;</content></entry></feed>
