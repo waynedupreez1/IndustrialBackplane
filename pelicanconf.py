@@ -5,8 +5,8 @@ import sys
 sys.path.append('.')
 
 AUTHOR = u'Wayne du Preez'
-SITENAME = u'IndustrialBackplane'
-SITEURL = 'https://waynedupreez1.github.io/IndustrialBackplane'
+SITENAME = u'PCBDevelopment'
+SITEURL = 'https://waynedupreez1.github.io/PCBDevelopment'
 
 TIMEZONE = 'Pacific/Auckland'
 

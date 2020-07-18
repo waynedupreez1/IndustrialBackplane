@@ -1,7 +1,7 @@
-# Industrial Backplane Website
+# PCB Development Website
 
 This is the source code for the:
-[IndustrialBackplane](https://waynedupreez1.github.io/IndustrialBackplane/)
+[PCBDevelopment](https://waynedupreez1.github.io/PCBDevelopment/)
 
 which is based on pythons pelican static site generator.  
 

@@ -1,0 +1,174 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="../../theme/js/jquery.min.js"></script>
+    <script src="../../theme/js/jquery.dropotron.min.js"></script>
+    <script src="../../theme/js/skel.min.js"></script>
+    <script src="../../theme/js/skel-layers.min.js"></script>
+    <script src="../../theme/js/init.js"></script>
+    <link rel="stylesheet" href="../../theme/css/pygment.css" />
+    <noscript>
+        <link rel="stylesheet" href="../../theme/css/skel.css" />
+        <link rel="stylesheet" href="../../theme/css/style.css" />
+        <link rel="stylesheet" href="../../theme/css/style-noscript.css" />
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" -->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+
+    <title>34C04 EEPROM Driver | PCBDevelopment </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+</head>
+
+<body class=" loading">
+
+
+
+    <!-- Header -->
+    <header id="header" >
+        <h1 class="logo">
+            <a href="../..">PCBDevelopment</a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                <li class="submenu">
+                    <!--a href="../../blog">Blog</a-->
+                    <!--ul-->
+                            <li >
+                                <a href="../../category/hardware/">Hardware</a>
+                            </li>
+                            <li class="active">
+                                <a href="../../category/software/">Software</a>
+                            </li>
+                    <!--/ul-->
+                </li>
+                <!--li><a href="#" class="button special">Sign Up</a></li-->
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main -->
+<article id="main">
+
+  <header class="special container">
+    <span class="icon fa-language"></span>
+    <h2>34C04 EEPROM Driver</h2>
+    <!-- add page sub title here -->
+    <p>Posted on 2020-03-08T11:38:00Z by Wayne du Preez</p>
+    <p>language</p>
+  </header>
+
+  <!-- One -->
+    <section class="wrapper style4 container">
+
+      <!-- Content -->
+        <div class="content">
+          <section>
+            <!-- <a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a> -->
+            <h3>Posted in <a href="../../category/software/">Software</a></h3>
+            <p class="tags">
+</p>
+            <p><h1>Description</h1>
+<p>So after geting some PCB's made I decided to try my hand at writing drivers for the 34C04 EEPROM
+I2C chips that I use to identify each PCB plugged into the backplane board.</p>
+<p>I decided to write this in rust as my C language foo is not so great, also rust is cool 
+and I want to try it out for embedded work as I already use it for pc code development.</p>
+<p>My setup is as follows:</p>
+<ol>
+<li>IDE = VScode.</li>
+<li>OS = Ubuntu - I run ubuntu at home and virtualize Windows where needed.</li>
+<li>Target = STM32 - Blue Pill</li>
+</ol>
+<h1>Issues</h1>
+<p>The first issue was getting it setup nicely with GDB for debugging, fortunatly the web is full of people doing it.
+The second issues was to set it up in such a way that my unit test code is compiled and ran on my workstation and the
+the application code is compiled and ran on the target, I managed to figure it out.</p>
+<h1>Some example code:</h1>
+<div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="n">address</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eeprom34c04</span>::<span class="n">SlaveAddr</span>::<span class="n">A2A1A0</span><span class="p">(</span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">);</span><span class="w"></span>
+
+<span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">eeprom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eeprom34c04</span>::<span class="n">Eeprom34c04</span>::<span class="n">new_34c04</span><span class="p">(</span><span class="n">i2c_setup</span><span class="p">,</span><span class="w"> </span><span class="n">address</span><span class="p">);</span><span class="w"></span>
+
+<span class="kd">let</span><span class="w"> </span><span class="n">memory_address</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x0F</span><span class="p">;</span><span class="w"></span>
+
+<span class="kd">let</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xF0</span><span class="p">;</span><span class="w"></span>
+
+<span class="n">eeprom</span><span class="p">.</span><span class="n">write_byte</span><span class="p">(</span><span class="n">memory_address</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w"></span>
+
+<span class="n">delay</span><span class="p">.</span><span class="n">delay_ms</span><span class="p">(</span><span class="mi">5</span><span class="k">u16</span><span class="p">);</span><span class="w"></span>
+
+<span class="kd">let</span><span class="w"> </span><span class="n">read_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eeprom</span><span class="p">.</span><span class="n">read_byte</span><span class="p">(</span><span class="n">memory_address</span><span class="p">).</span><span class="n">unwrap</span><span class="p">();</span><span class="w"></span>
+</pre></div>
+
+
+<h2><a href="https://github.com/waynedupreez1/eeprom34c04-rs">Link to Github 34C04 repo</a></h2>
+<h3><strong>And Thats it until the next one.</strong></h3></p>
+          </section>
+        </div>
+
+    </section>
+
+    <!-- Two -->
+    <section class="wrapper style1 container special">
+        <div class="row">
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-language"></span>
+              <header>
+                <a href="../../blog/34c04-eeprom-driver" rel='bookmark'><h3>34C04 EEPROM Driver</h3></a>
+              </header>
+              <p>Description So after geting some PCB's made I decided to try my hand at writing drivers for the 34C04 EEPROM I2C chips that I use to identify each PCB plugged into the backplane board.</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../../blog/34c04-eeprom-driver" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-microchip"></span>
+              <header>
+                <a href="../../blog/pcb-design" rel='bookmark'><h3>PCB Design</h3></a>
+              </header>
+              <p>Description I have managed to get some PCB's designed based on my requirements. Here is some 3D models of the first few boards I am getting made. Backplane PCB This bo</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../../blog/pcb-design" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+        </div>
+    </section>
+  </article>
+
+
+
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+        <li>
+          <a href="https://nz.linkedin.com/in/waynedupreez" class="icon circle fa fa-linkedin"><span class="label">linkedin</span></a>
+        </li>
+        <li>
+          <a href="http://github.com/waynedupreez1" class="icon circle fa fa-github"><span class="label">github</span></a>
+        </li>
+    </ul>
+
+    <span class="copyright">&copy; Untitled. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+
+</footer>
+</body>
+</html>
